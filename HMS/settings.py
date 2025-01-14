@@ -148,6 +148,8 @@ CKEDITOR_UPLOAD_PATH = "uploads/"
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+AUTH_USER_MODEL = "accounts.User"
+
 JAZZMIN_SETTINGS ={
     'site_header':'Admin',
     'site_brand':'HMS',
