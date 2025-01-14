@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'website',
     'accounts',
-    # 'admin',
+    # 'adman',
     'dashboard',
     'bookings',
     'tickets',
@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'mathfilters',
     'ckeditor_uploader',
     'ckeditor',
+    'taggit',
     
     
     
@@ -145,3 +146,11 @@ CKEDITOR_UPLOAD_PATH = "uploads/"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+JAZZMIN_SETTINGS ={
+    'site_header':'Admin',
+    'site_brand':'HMS',
+    'copyright': 'All Rights Reserved || HMS',
+    'welcome_sign':'Hotel Management System',
+}
