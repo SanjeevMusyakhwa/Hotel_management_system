@@ -18,7 +18,7 @@ class RegisterForm(UserCreationForm):
         })
     )
     phone_number = forms.CharField(
-        max_length=15,
+        max_length=17,
         widget=forms.TextInput(attrs={
             'placeholder': 'Enter your Phone Number',
             'class': 'form-control',

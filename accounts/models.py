@@ -39,7 +39,7 @@ class User(AbstractUser):
     full_name = models.CharField(max_length=200, verbose_name='Full Name')
     username = models.CharField(max_length=20, unique=True)
     email = models.EmailField(unique=True)
-    phone_number = models.CharField(max_length=13, unique=True)
+    phone_number = models.CharField(max_length=20, unique=True)
     gender = models.CharField(max_length=10, choices=GENDER_CHOICES, default='Male')
 
     otp = models.CharField(max_length=6, null=True, blank=True)

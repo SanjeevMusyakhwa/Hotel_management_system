@@ -1,0 +1,55 @@
+{% extends "website/base.html" %}
+
+{% block title %}
+  Login
+{% endblock title %}
+
+{% block header %}
+  <!-- Add a header or navigation bar if needed -->
+{% endblock header %}
+
+{% block content %}
+<div class="col-md-8 m-5">
+  <!-- Form rendering -->
+  <form method="post" action="{% url 'accounts:login' %}" class="ajax-form">
+    {% csrf_token %}
+    
+    <!-- Display error messages -->
+    {% if messages %}
+      {% for message in messages %}
+        <div class="alert alert-{{ message.tags }}">
+          {{ message }}
+        </div>
+      {% endfor %}
+    {% endif %}
+    
+    <!-- Phone Number field -->
+    <div class="form-group">
+      <label for="phone_number">Phone Number</label>
+      <input type="text" name="phone_number" id="phone_number" class="form-control" 
+             value="{{ request.POST.phone_number|default:'' }}" 
+             placeholder="Enter your phone number" required>
+    </div>
+    
+    <!-- Password field -->
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" class="form-control" 
+             placeholder="Enter your password" required>
+    </div>
+    
+    <!-- Remember Me (optional) -->
+    <div class="form-group form-check">
+      <input type="checkbox" name="remember" id="remember" class="form-check-input" value="1">
+      <label class="form-check-label" for="remember">Remember me</label>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="mt-4 text-center">
+      <button type="submit" class="btn btn-primary">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+{% endblock content %}
