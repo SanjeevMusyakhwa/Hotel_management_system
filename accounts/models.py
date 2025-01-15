@@ -48,8 +48,7 @@ class User(AbstractUser):
     REQUIRED_FIELDS = ['username', 'email', 'full_name']
 
     def __str__(self):
-        return f"{self.full_name} with username {self.username} and Phone Number {self.phone_number}"
-
+        return f"{self.full_name} ({self.username}) - {self.phone_number}"
 
 class Profile(models.Model):
     pid = ShortUUIDField(length=6, max_length=15, alphabet="abcdefghijklmnopqrst1234567890")
@@ -67,8 +66,7 @@ class Profile(models.Model):
         ordering = ['-date']
 
     def __str__(self):
-        return f"{self.user.full_name or self.user.username} with Phone Number {self.user.phone_number}"
-
+        return f"{self.user.full_name or self.user.username} - {self.user.phone_number}"
 
 @receiver(post_save, sender=User)
 def create_or_update_user_profile(sender, instance, created, **kwargs):
