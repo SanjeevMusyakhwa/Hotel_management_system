@@ -1,34 +1,28 @@
-{% extends "website/base.html" %}
-
+{% extends "accounts/base.html" %}
 {% block title %}
   Register
 {% endblock title %}
-
-
 {% block content %}
-<div class="section padding-top z-bigger">
-  <div class="container">
-    <div class="row justify-content-center padding-bottom-smaller">
-      <div class="col-md-8">
-        <div class="subtitle with-line text-center mb-4">{% block header %}
-          Register
-        {% endblock header %}</div>
-        <h3 class="text-center padding-bottom-small">Feel Free To Register</h3>
-      </div>
-      
-      <div class="col-md-8">
-        <!-- Django form rendering -->
-        <form method="post" class="ajax-form" action="{% url 'accounts:register' %}">
-          {% csrf_token %}
-          {{ form.as_p }}
-          <div class="mt-4 text-center">
-            <button type="submit" class="btn btn-primary send_message" id="send" data-lang="en">
-              Submit
-            </button>
+<div class="container mt-5">
+  <div class="row justify-content-center">
+      <div class="col-md-6">
+          <div class="card">
+              <div class="card-header text-center">
+                  <h4>Register</h4>
+              </div>
+              <div class="card-body">
+                  <form action="{% url 'accounts:register' %}" method="POST">
+                    {% csrf_token %}
+                      <div class="mb-3">
+                          {{ form.as_p }}
+                      </div>
+                      <div class="d-grid">
+                          <button type="submit" class="btn btn-primary">Register</button>
+                      </div>
+                  </form>
+              </div>
           </div>
-        </form>
       </div>
-    </div>
   </div>
 </div>
 {% endblock content %}
