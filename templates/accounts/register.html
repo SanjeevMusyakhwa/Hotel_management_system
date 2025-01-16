@@ -1,28 +1,22 @@
-{% extends "accounts/base.html" %}
+{% extends "website/base.html" %}
 {% block title %}
   Register
 {% endblock title %}
 {% block content %}
-<div class="container mt-5">
-  <div class="row justify-content-center">
-      <div class="col-md-6">
-          <div class="card">
-              <div class="card-header text-center">
-                  <h4>Register</h4>
-              </div>
-              <div class="card-body">
-                  <form action="{% url 'accounts:register' %}" method="POST">
-                    {% csrf_token %}
-                      <div class="mb-3">
-                          {{ form.as_p }}
-                      </div>
-                      <div class="d-grid">
-                          <button type="submit" class="btn btn-primary">Register</button>
-                      </div>
-                  </form>
-              </div>
-          </div>
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f8f9fa;">
+  <div style="border: none; border-radius: 10px; background-color: #ffffff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 1.5rem; width: 100%; max-width: 400px;">
+    <h2 style="text-align: center; margin-bottom: 1.5rem;">Register</h2>
+    <form action="{% url 'accounts:register' %}" method="POST">
+      {% csrf_token %}
+      
+      <!-- Form Fields -->
+      <div style="margin-bottom: 1rem;">
+        {{ form.as_p }}
       </div>
+      
+      <!-- Submit Button -->
+      <button type="submit" style="background-color: #007bff; border: none; padding: 0.5rem 1rem; font-size: 1rem; font-weight: bold; border-radius: 5px; color: white; width: 100%; transition: background-color 0.3s;">Register</button>
+    </form>
   </div>
 </div>
 {% endblock content %}

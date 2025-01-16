@@ -1,36 +1,33 @@
-{% extends "accounts/base.html" %}
+{% extends "website/base.html" %}
 {% block title %}
   Login
 {% endblock title %}
 {% block content %}
-<div class="d-flex justify-content-center align-items-center vh-100 bg-light">
-  <div class="card shadow p-4" style="width: 350px;">
-    <h2 class="text-center mb-4">Login</h2>
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f8f9fa;">
+  <div style="border: none; border-radius: 10px; background-color: #ffffff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 1.5rem; width: 100%; max-width: 350px;">
+    <h2 style="text-align: center; margin-bottom: 1.5rem;">Login</h2>
     <form action="{% url 'accounts:login' %}" method="POST">
-      <!-- CSRF Token (if needed for your backend) -->
       {% csrf_token %}
-
-      <!-- Email/Username Field -->
-      <div class="mb-3">
-        <label for="phone_number" class="form-label">Phone Number</label>
-        <input type="text" class="form-control" id="phone_number" name="phone_number" placeholder="Enter your Phone Number" required>
+      <!-- Phone Number Field -->
+      <div style="margin-bottom: 1rem;">
+        <label for="phone_number" style="font-weight: bold; margin-bottom: 0.5rem; display: block;">Phone Number</label>
+        <input type="text" id="phone_number" name="phone_number" placeholder="Enter your Phone Number" required style="border: 1px solid #ced4da; border-radius: 5px; padding: 0.5rem 0.75rem; width: 100%; box-sizing: border-box;">
       </div>
 
       <!-- Password Field -->
-      <div class="mb-3">
-        <label for="password" class="form-label">Password</label>
-        <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+      <div style="margin-bottom: 1rem;">
+        <label for="password" style="font-weight: bold; margin-bottom: 0.5rem; display: block;">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required style="border: 1px solid #ced4da; border-radius: 5px; padding: 0.5rem 0.75rem; width: 100%; box-sizing: border-box;">
       </div>
 
-
       <!-- Submit Button -->
-      <button type="submit" class="btn btn-primary w-100">Login</button>
+      <button type="submit" style="background-color: #007bff; border: none; padding: 0.5rem 1rem; font-size: 1rem; font-weight: bold; border-radius: 5px; color: white; width: 100%; transition: background-color 0.3s;">Login</button>
 
       <!-- Links -->
-      <div class="text-center mt-3">
-        <a href="/forgot-password" class="text-decoration-none">Forgot Password?</a>
+      <div style="text-align: center; margin-top: 1rem;">
+        <a href="/forgot-password" style="text-decoration: none; color: #007bff; font-size: 0.9rem;">Forgot Password?</a>
         <br>
-        <a href="{% url 'accounts:register' %}" class="text-decoration-none">Create an Account</a>
+        <a href="{% url 'accounts:register' %}" style="text-decoration: none; color: #007bff; font-size: 0.9rem;">Create an Account</a>
       </div>
     </form>
   </div>

@@ -1,548 +1,338 @@
-{% extends 'website/base.html' %}
-		{% block title %}
-      Home
-    {% endblock title %}
-	<!-- Primary Page Layout
-	================================================== -->
-  {% block content %}
-    
+{% extends "website/base.html" %}
+{% block content %}
 	
-	
-	<div class="section background-dark z-too-big">		
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="row justify-content-center home-translate">
-						<div class="col-xl-8">
-							<div class="row justify-content-center home-shadow">
-								<div class="col-md-6 px-sm-0">
-									<div class="booking-sep-wrap">
-										<div class="input-daterange input-group" id="flight-datepicker-1">
-											<div class="form-item">
-												<span class="fontawesome-calendar"></span>
-												<input class="input-sm" type="text" autocomplete="off" id="start-date" name="start" placeholder="check-in" data-date-format="DD, MM d"/>
-												<span class="date-text date-depart"></span>
-											</div>
-											<div class="form-item">
-												<span class="fontawesome-calendar"></span>
-												<input class="input-sm" type="text" autocomplete="off" id="end-date" name="end" placeholder="check-out" data-date-format="DD, MM d"/>
-												<span class="date-text date-return"></span>
-											</div>
-										</div>	
-									</div>
-								</div>
-								<div class="col-md-3 px-sm-0">
-									<div class="quantity">
-										<input type="number" min="1" max="9999" step="1" value="1" >
-									</div>	
-								</div>	
-								<div class="col-md-3 px-sm-0">
-									<a class="booking-button-big" href="search.html">check<br>availability</a>
-								</div>
-							</div>	
-						</div>		
-					</div>	
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="section padding-top-bottom over-hide">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 align-self-center">
-					<div class="row justify-content-center">
-						<div class="col-10">
-							<div class="subtitle text-center mb-4">hotel Thalia</div>
-							<h2 class="text-center">Here is a tribute to good life!</h2>
-							<p class="text-center mt-5">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 mt-4 mt-md-0">
-					<div class="img-wrap">
-						<img src="img/rooms.png" alt="">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="section background-grey over-hide">
-		<div class="container-fluid px-0">
-			<div class="row mx-0">
-				<div class="col-xl-6 px-0">
-					<div class="img-wrap" id="rev-1">
-						<img src="img/room1.jpg" alt="">
-						<div class="text-element-over">private pool suite</div>
-					</div>
-				</div>
-				<div class="col-xl-6 px-0 mt-4 mt-xl-0 align-self-center">
-					<div class="row justify-content-center">
-						<div class="col-10 col-xl-8 text-center">
-							<h3 class="text-center">Private pool suite</h3>
-							<p class="text-center mt-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</p>
-							<a class="mt-5 btn btn-primary" href="search.html">check availability</a>
-						</div>	
-					</div>
-				</div>
-			</div>
-			<div class="row mx-0">
-				<div class="col-xl-6 px-0 mt-4 mt-xl-0 pb-5 pb-xl-0 align-self-center">
-					<div class="row justify-content-center">
-						<div class="col-10 col-xl-8 text-center">
-							<h3 class="text-center">Sea view suite</h3>
-							<p class="text-center mt-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</p>
-							<a class="mt-5 btn btn-primary" href="search.html">check availability</a>
-						</div>	
-					</div>
-				</div>
-				<div class="col-xl-6 px-0 order-first order-xl-last mt-5 mt-xl-0">
-					<div class="img-wrap" id="rev-2">
-						<img src="img/room2.jpg" alt="">
-						<div class="text-element-over">sea view suite</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="section background-dark over-hide">
-		<div class="container-fluid py-4">
-			<div class="row">
-				<div class="col-sm-6 col-lg-3">
-					<a href="services.html">
-						<div class="img-wrap services-wrap">
-							<img src="img/ser-1.jpg" alt="">
-							<div class="services-text-over">spa salon</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-6 col-lg-3 pt-4 pt-sm-0">
-					<a href="services.html">
-						<div class="img-wrap services-wrap">
-							<img src="img/ser-2.jpg" alt="">
-							<div class="services-text-over">restaurant</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-6 col-lg-3 pt-4 pt-lg-0">
-					<a href="services.html">
-						<div class="img-wrap services-wrap">
-							<img src="img/ser-3.jpg" alt="">
-							<div class="services-text-over">pool</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-6 col-lg-3 pt-4 pt-lg-0">
-					<a href="services.html">
-						<div class="img-wrap services-wrap">
-							<img src="img/ser-4.jpg" alt="">
-							<div class="services-text-over">activities</div>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="section padding-top-bottom over-hide">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-8 align-self-center">
-					<div class="subtitle with-line text-center mb-4">elegant suites</div>
-					<h3 class="text-center padding-bottom-small">Unpretentious luxury</h3>
-				</div>
-				<div class="section clearfix"></div>
-				<div class="col-sm-6 col-lg-4">
-					<div class="services-box text-center">
-						<img src="img/1.svg" alt="">
-						<h5 class="mt-2">smoking free</h5>
-						<p class="mt-3">Sed ut perspiciatis unde omnis iste natus error sit, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</p>
-						<a class="mt-1 btn btn-primary" href="services.html">read more</a>
-					</div>
-				</div>
-				<div class="col-sm-6 col-lg-4 mt-5 mt-sm-0">
-					<div class="services-box text-center">
-						<img src="img/2.svg" alt="">
-						<h5 class="mt-2">king beds</h5>
-						<p class="mt-3">Sed ut perspiciatis unde omnis iste natus error sit, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</p>
-						<a class="mt-1 btn btn-primary" href="services.html">read more</a>
-					</div>
-				</div>
-				<div class="col-sm-6 col-lg-4 mt-5 mt-lg-0">
-					<div class="services-box text-center">
-						<img src="img/3.svg" alt="">
-						<h5 class="mt-2">Yacht rental</h5>
-						<p class="mt-3">Sed ut perspiciatis unde omnis iste natus error sit, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</p>
-						<a class="mt-1 btn btn-primary" href="services.html">read more</a>
-					</div>
-				</div>
-				<div class="col-sm-6 col-lg-4 mt-5">
-					<div class="services-box text-center">
-						<img src="img/4.svg" alt="">
-						<h5 class="mt-2">welcome drink</h5>
-						<p class="mt-3">Sed ut perspiciatis unde omnis iste natus error sit, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</p>
-						<a class="mt-1 btn btn-primary" href="services.html">read more</a>
-					</div>
-				</div>
-				<div class="col-sm-6 col-lg-4 mt-5">
-					<div class="services-box text-center">
-						<img src="img/5.svg" alt="">
-						<h5 class="mt-2">swimming pool</h5>
-						<p class="mt-3">Sed ut perspiciatis unde omnis iste natus error sit, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</p>
-						<a class="mt-1 btn btn-primary" href="services.html">read more</a>
-					</div>
-				</div>
-				<div class="col-sm-6 col-lg-4 mt-5">
-					<div class="services-box text-center">
-						<img src="img/6.svg" alt="">
-						<h5 class="mt-2">food included</h5>
-						<p class="mt-3">Sed ut perspiciatis unde omnis iste natus error sit, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</p>
-						<a class="mt-1 btn btn-primary" href="services.html">read more</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div class="section padding-top-bottom-big over-hide">
-		<div class="parallax" style="background-image: url('img/4.jpg')"></div>
-		<div class="section z-bigger">		
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 py-5">
-						<div class="booking-hero-wrap">
-							<div class="row justify-content-center">
-								<div class="col-5 no-mob">
-									<div class="input-daterange input-group" id="flight-datepicker">
-										<div class="row">	
-											<div class="col-6">
-												<div class="form-item">
-													<span class="fontawesome-calendar"></span>
-													<input class="input-sm" type="text" autocomplete="off" id="start-date-1" name="start" placeholder="chech-in date" data-date-format="DD, MM d"/>
-													<span class="date-text date-depart"></span>
-												</div>
-											</div>
-											<div class="col-6">
-												<div class="form-item">
-													<span class="fontawesome-calendar"></span>
-													<input class="input-sm" type="text" autocomplete="off" id="end-date-1" name="end" placeholder="check-out date" data-date-format="DD, MM d"/>
-													<span class="date-text date-return"></span>
-												</div>
-											</div>
-										</div>
-									</div>	
-								</div>
-								<div class="col-5 no-mob">
-									<div class="row">
-										<div class="col-6">
-											<select name="adults" class="wide">
-												<option data-display="adults">adults</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-											</select>
-										</div>
-										<div class="col-6">
-											<select name="children" class="wide">
-												<option data-display="children">children</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-											</select>
-										</div>
-									</div>
-								</div>
-								<div class="col-6  col-sm-4 col-lg-2">
-									<a class="booking-button" href="search.html">book now</a>
-								</div>
-							</div>
-						</div>	
-					</div>
-				</div>
-			</div>					
-		</div>
-	</div>
-	
-	<div class="section padding-top-bottom over-hide background-grey">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-8 align-self-center">
-					<div class="subtitle with-line text-center mb-4">luxury</div>
-					<h3 class="text-center padding-bottom-small">Our rooms</h3>
-				</div>
-				<div class="section clearfix"></div>
-				<div class="col-md-6">
-					<div class="room-box background-white">
-						<div class="room-name">suite tanya</div>
-						<div class="room-per">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-						</div>
-						<img src="img/room3.jpg" alt="">
-						<div class="room-box-in">
-							<h5 class="">pool suite</h5>
-							<p class="mt-3">Sed ut perspiciatis unde omnis, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</p>
-							<a class="mt-1 btn btn-primary" href="rooms-gallery.html">book from 130$</a>
-							<div class="room-icons mt-4 pt-4">
-								<img src="img/5.svg" alt="">
-								<img src="img/2.svg" alt="">
-								<img src="img/3.svg" alt="">
-								<img src="img/1.svg" alt="">
-								<a href="rooms-gallery.html">full info</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 mt-4 mt-md-0">
-					<div class="room-box background-white">
-						<div class="room-name">suite helen</div>
-						<div class="room-per">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star-o"></i>
-						</div>
-						<img src="img/room4.jpg" alt="">
-						<div class="room-box-in">
-							<h5 class="">small room</h5>
-							<p class="mt-3">Sed ut perspiciatis unde omnis, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</p>
-							<a class="mt-1 btn btn-primary" href="rooms-gallery.html">book from 80$</a>
-							<div class="room-icons mt-4 pt-4">
-								<img src="img/4.svg" alt="">
-								<img src="img/2.svg" alt="">
-								<img src="img/6.svg" alt="">
-								<img src="img/3.svg" alt="">
-								<a href="rooms-gallery.html">full info</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 mt-4">
-					<div class="room-box background-white">
-						<div class="room-name">suite andrea</div>
-						<div class="room-per">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-						</div>
-						<img src="img/room5.jpg" alt="">
-						<div class="room-box-in">
-							<h5 class="">Apartment</h5>
-							<p class="mt-3">Sed ut perspiciatis unde omnis, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</p>
-							<a class="mt-1 btn btn-primary" href="rooms-gallery.html">book from 110$</a>
-							<div class="room-icons mt-4 pt-4">
-								<img src="img/5.svg" alt="">
-								<img src="img/2.svg" alt="">
-								<img src="img/3.svg" alt="">
-								<img src="img/6.svg" alt="">
-								<a href="rooms-gallery.html">full info</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 mt-4">
-					<div class="room-box background-white">
-						<div class="room-name">suite diana</div>
-						<div class="room-per">
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-							<i class="fa fa-star"></i>
-						</div>
-						<img src="img/room6.jpg" alt="">
-						<div class="room-box-in">
-							<h5 class="">big Apartment</h5>
-							<p class="mt-3">Sed ut perspiciatis unde omnis, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</p>
-							<a class="mt-1 btn btn-primary" href="rooms-gallery.html">book from 160$</a>
-							<div class="room-icons mt-4 pt-4">
-								<img src="img/5.svg" alt="">
-								<img src="img/2.svg" alt="">
-								<img src="img/3.svg" alt="">
-								<img src="img/6.svg" alt="">
-								<a href="rooms-gallery.html">full info</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>	
-		</div>		
-	</div>
-	
-	<div class="section padding-top-bottom-big over-hide">
-		<div class="parallax" style="background-image: url('img/5.jpg')"></div>
-		<div class="section z-bigger">		
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-md-8">
-						<div id="owl-sep-1" class="owl-carousel owl-theme">								 
-							<div class="item">						
-								<div class="quote-sep">	
-									<h4>"Chilling out on the bed in your hotel room watching television, while wearing your own pajamas, is sometimes the best part of a vacation."</h4>
-									<h6>Jason Salvatore</h6>	
-								</div>											
-							</div>											
-							<div class="item">					
-								<div class="quote-sep">
-									<h4>"Every good day starts off with a cappuccino, and there's no place better to enjoy some frothy caffeine than at the Thalia Hotel."</h4>
-									<h6>Terry Mitchell</h6>	
-								</div>									
-							</div>											
-							<div class="item">					
-								<div class="quote-sep">
-									<h4>"I still enjoy traveling a lot. I mean, it amazes me that I still get excited in hotel rooms just to see what kind of shampoo they've left me."</h4>
-									<h6>Michael Brighton</h6>
-								</div>										
-							</div>								 
-						</div>	
-					</div>
-				</div>
-			</div>					
-		</div>
-	</div>
-	
-	<div class="section padding-top-bottom-small background-dark-2 over-hide">		
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">	
-					<h5 class="color-grey">A new dimension of luxury.</h5>
-					<p class="color-white mt-3 mb-3"><em>our presentation, 0:48 min</em></p>
-					<a href="https://vimeo.com/54851233" class="video-button" data-fancybox><i class="fa fa-play"></i></a>
-				</div>
-			</div>
-		</div>	
-	</div>
-	
-	<div class="section padding-top-bottom background-grey over-hide">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-8 align-self-center">
-					<div class="subtitle with-line text-center mb-4">Excellent restaurant</div>
-					<h3 class="text-center padding-bottom-small">Dining &amp; Bars</h3>
-				</div>
-				<div class="section clearfix"></div>
-			</div>
-			<div class="row background-white p-0 m-0">
-				<div class="col-xl-6 p-0">
-					<div class="img-wrap" id="rev-3">
-						<img src="img/rest-1.jpg" alt="">
-					</div>
-				</div>
-				<div class="col-xl-6 p-0 align-self-center">
-					<div class="row justify-content-center">
-						<div class="col-9 pt-4 pt-xl-0 pb-5 pb-xl-0 text-center">
-							<h5 class="">beach restaurant</h5>
-							<p class="mt-3">Sed ut perspiciatis unde omnis, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</p>
-							<a class="mt-1 btn btn-primary" href="restaurant.html">explore</a>
-						</div>
-					</div>	
-				</div>
-			</div>
-			<div class="row background-white p-0 m-0">
-				<div class="col-xl-6 p-0 align-self-center">
-					<div class="row justify-content-center">
-						<div class="col-9 pt-4 pt-xl-0 pb-5 pb-xl-0 text-center">
-							<h5 class="">pool restaurant</h5>
-							<p class="mt-3">Sed ut perspiciatis unde omnis, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</p>
-							<a class="mt-1 btn btn-primary" href="restaurant.html">explore</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-6 order-first order-xl-last p-0">
-					<div class="img-wrap" id="rev-4">
-						<img src="img/rest-2.jpg" alt="">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
-	<div class="section padding-top z-bigger">
-		<div class="container">
-			<div class="row justify-content-center padding-bottom-smaller">
-				<div class="col-md-8">
-					<div class="subtitle with-line text-center mb-4">get in touch</div>
-					<h3 class="text-center padding-bottom-small">drop us a line</h3>
-				</div>
-				<div class="section clearfix"></div>
-				<div class="col-md-6 col-lg-4">
-					<div class="address">
-						<div class="address-in text-left">
-							<p class="color-black">Address:</p>
-						</div>
-						<div class="address-in text-right">
-							<p>Avenue Str. 328</p>
-						</div>
-					</div>
-					<div class="address">
-						<div class="address-in text-left">
-							<p class="color-black">City:</p>
-						</div>
-						<div class="address-in text-right">
-							<p>Thessaloniki</p>
-						</div>
-					</div>
-					<div class="address">
-						<div class="address-in text-left">
-							<p class="color-black">Check-In:</p>
-						</div>
-						<div class="address-in text-right">
-							<p>14:00 pm</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4">
-					<div class="address">
-						<div class="address-in text-left">
-							<p class="color-black">Phone:</p>
-						</div>
-						<div class="address-in text-right">
-							<p>+21 60 374 7537</p>
-						</div>
-					</div>
-					<div class="address">
-						<div class="address-in text-left">
-							<p class="color-black">Email:</p>
-						</div>
-						<div class="address-in text-right">
-							<p>info@hotel.com</p>
-						</div>
-					</div>
-					<div class="address">
-						<div class="address-in text-left">
-							<p class="color-black">Check-Out:</p>
-						</div>
-						<div class="address-in text-right">
-							<p>11:00 am</p>
-						</div>
-					</div>
-				</div>
-				<div class="section clearfix"></div>
-				<div class="col-md-8 text-center mt-5" data-scroll-reveal="enter bottom move 50px over 0.7s after 0.2s">
-					<p class="mb-0"><em>available at: 8am - 10pm</em></p>
-					<h2 class="text-opacity">+21 60 374 7537</h2>
-				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-md-8">
-					<div class="subscribe-home">
-						<input type="text" placeholder="your email here"/>
-						<button data-lang="en">subscribe</button>
-					</div>
-				</div>
-			</div>
-		</div>	
-	</div>
-  {% endblock content %}
+    <header class="header" id="home">
+      <div class="section__container header__container">
+        <p class="section__subheader">ABOUT US</p>
+        <h1>The Perfect<br />Base For You</h1>
+        <button class="btn">Take A Tour</button>
+      </div>
+    </header>
 
-	
+    <section class="booking">
+      <div class="section__container booking__container">
+        <form action="/">
+          <div class="input__group">
+            <label for="arrival">Arrival Date</label>
+            <input type="text" placeholder="Your Arrival Date" />
+          </div>
+          <div class="input__group">
+            <label for="departure">Departure Date</label>
+            <input type="text" placeholder="Your Departure Date" />
+          </div>
+          <div class="input__group">
+            <label for="guests">Guests</label>
+            <input type="text" placeholder="No Of Guests" />
+          </div>
+          <button class="btn">Check Availability</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section__container about__container">
+        <div class="about__grid">
+          <div class="about__image">
+            <img src="assets/about-1.jpg" alt="about" />
+          </div>
+          <div class="about__card">
+            <span><i class="ri-user-line"></i></span>
+            <h4>Strong Team</h4>
+            <p>
+              Unlocking Hospitality Excellence And Ensures Your Perfect Stay
+            </p>
+          </div>
+          <div class="about__image">
+            <img src="assets/about-2.jpg" alt="about" />
+          </div>
+          <div class="about__card">
+            <span><i class="ri-calendar-check-line"></i></span>
+            <h4>Luxury Room</h4>
+            <p>Experience Unrivaled Luxury at Our Exquisite Luxury Rooms</p>
+          </div>
+        </div>
+        <div class="about__content">
+          <p class="section__subheader">ABOUT US</p>
+          <h2 class="section__header">Discover Our Underground</h2>
+          <p class="section__description">
+            Welcome to a hidden realm of extraordinary accommodations where
+            luxury, comfort, and adventure converge. Our underground hotels
+            offer an unparalleled escape from the ordinary, inviting you to
+            explore a subterranean world of wonders.
+          </p>
+          <button class="btn">Book Now</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="room__container" id="room">
+      <p class="section__subheader">ROOMS</p>
+      <h2 class="section__header">Hand Picked Rooms</h2>
+      <div class="room__grid">
+        <div class="room__card">
+          <img src="assets/room-1.jpg" alt="room" />
+          <div class="room__card__details">
+            <div>
+              <h4>Deluxe Suite</h4>
+              <p>Well-appointed rooms designed for guests who desire a more.</p>
+            </div>
+            <h3>$399<span>/night</span></h3>
+          </div>
+        </div>
+        <div class="room__card">
+          <img src="assets/room-2.jpg" alt="room" />
+          <div class="room__card__details">
+            <div>
+              <h4>Family Suite</h4>
+              <p>Consist of multiple rooms and a common living area.</p>
+            </div>
+            <h3>$599<span>/night</span></h3>
+          </div>
+        </div>
+        <div class="room__card">
+          <img src="assets/room-3.jpg" alt="room" />
+          <div class="room__card__details">
+            <div>
+              <h4>Luxury Penthouse</h4>
+              <p>
+                Top-tier accommodations usually on the highest floors of a
+                hotel.
+              </p>
+            </div>
+            <h3>$799<span>/night</span></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="section__container intro__container">
+        <div class="intro__cotent">
+          <p class="section__subheader">INTRO VIDEO</p>
+          <h2 class="section__header">Meet With Our Luxury Place</h2>
+          <p class="section__description">
+            Whether you're seeking a cozy and exclusive hideaway or an immersive
+            journey beneath the surface, Hotel Miranda promises to be an
+            unforgettable stay, where the depths of comfort and excitement await
+            your arrival.
+          </p>
+          <button class="btn">Book Now</button>
+        </div>
+        <div class="intro__video">
+          <video src="assets/luxury.mp4" autoplay muted loop></video>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container feature__container" id="feature">
+      <p class="section__subheader">FACILITIES</p>
+      <h2 class="section__header">Core Features</h2>
+      <div class="feature__grid">
+        <div class="feature__card">
+          <span><i class="ri-thumb-up-line"></i></span>
+          <h4>Have High Rating</h4>
+          <p>
+            We take pride in curating a selection of hotels that consistently
+            receive high ratings and positive reviews.
+          </p>
+        </div>
+        <div class="feature__card">
+          <span><i class="ri-time-line"></i></span>
+          <h4>Quite Hours</h4>
+          <p>
+            We understand that peace and uninterrupted rest are essential for a
+            rejuvenating experience.
+          </p>
+        </div>
+        <div class="feature__card">
+          <span><i class="ri-map-pin-line"></i></span>
+          <h4>Best Location</h4>
+          <p>
+            At our hotel booking website, we take pride in offering
+            accommodations in the most prime and sought-after locations.
+          </p>
+        </div>
+        <div class="feature__card">
+          <span><i class="ri-close-circle-line"></i></span>
+          <h4>Free Cancellation</h4>
+          <p>
+            We understand that travel plans can change unexpectedly, which is
+            why we offer the flexibility of free cancellation.
+          </p>
+        </div>
+        <div class="feature__card">
+          <span><i class="ri-wallet-line"></i></span>
+          <h4>Payment Options</h4>
+          <p>
+            Our hotel booking website offers a range of convenient payment
+            options to suit your preferences.
+          </p>
+        </div>
+        <div class="feature__card">
+          <span><i class="ri-coupon-line"></i></span>
+          <h4>Special Offers</h4>
+          <p>
+            Whether you're planning a romantic getaway, or a business trip, our
+            carefully curated special offers cater to all your needs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="section__container menu__container">
+        <div class="menu__header">
+          <div>
+            <p class="section__subheader">MENU</p>
+            <h2 class="section__header">Our Food Menu</h2>
+          </div>
+          <div class="section__nav">
+            <span><i class="ri-arrow-left-line"></i></span>
+            <span><i class="ri-arrow-right-line"></i></span>
+          </div>
+        </div>
+        <ul class="menu__items">
+          <li>
+            <img src="assets/menu-1.jpg" alt="menu" />
+            <div class="menu__details">
+              <h4>Fggs & Bacon</h4>
+              <p>
+                It is a culinary innovation that puts a unique spin on the
+                beloved breakfast combination.
+              </p>
+            </div>
+          </li>
+          <li>
+            <img src="assets/menu-2.jpg" alt="menu" />
+            <div class="menu__details">
+              <h4>Tea or Coffee</h4>
+              <p>
+                A classic choice for your daily dose of comfort and calmness.
+              </p>
+            </div>
+          </li>
+          <li>
+            <img src="assets/menu-3.jpg" alt="menu" />
+            <div class="menu__details">
+              <h4>Chia Oatmeal</h4>
+              <p>
+                Our Chia Oatmeal is a wholesome nutrient-packed breakfast
+                delight.
+              </p>
+            </div>
+          </li>
+          <li>
+            <img src="assets/menu-4.jpg" alt="menu" />
+            <div class="menu__details">
+              <h4>Fruit Parfait</h4>
+              <p>
+                Our Fruit Parfait is a delightful culinary masterpiece of
+                freshness and flavor.
+              </p>
+            </div>
+          </li>
+          <li>
+            <img src="assets/menu-5.jpg" alt="menu" />
+            <div class="menu__details">
+              <h4>Marmalade Selection</h4>
+              <p>
+                Our Marmalade Selection is a delectable medley of vibrant,
+                handcrafted citrus preserves.
+              </p>
+            </div>
+          </li>
+          <li>
+            <img src="assets/menu-6.jpg" alt="menu" />
+            <div class="menu__details">
+              <h4>Cheese Plate</h4>
+              <p>
+                Our cheese plate is a masterpiece that celebrates rich and
+                diverse world of cheeses.
+              </p>
+            </div>
+          </li>
+        </ul>
+        <div class="menu__images">
+          <img src="assets/menu-7.jpg" alt="menu" />
+          <img src="assets/menu-8.jpg" alt="menu" />
+          <img src="assets/menu-9.jpg" alt="menu" />
+        </div>
+        <ul class="menu__banner">
+          <li>
+            <span><i class="ri-file-text-line"></i></span>
+            <h4>84k</h4>
+            <p>Projects are Completed</p>
+          </li>
+          <li>
+            <span><i class="ri-user-line"></i></span>
+            <h4>10M</h4>
+            <p>Active Around World</p>
+          </li>
+          <li>
+            <span><i class="ri-function-line"></i></span>
+            <h4>02k</h4>
+            <p>Categories Served</p>
+          </li>
+          <li>
+            <span><i class="ri-lightbulb-flash-line"></i></span>
+            <h4>100M</h4>
+            <p>Ideas Raised Funds</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section__container news__container" id="news">
+      <div class="news__header">
+        <div>
+          <p class="section__subheader">BLOG</p>
+          <h2 class="section__header">News Feeds</h2>
+        </div>
+        <div class="section__nav">
+          <span><i class="ri-arrow-left-line"></i></span>
+          <span><i class="ri-arrow-right-line"></i></span>
+        </div>
+      </div>
+      <div class="news__grid">
+        <div class="news__card">
+          <img src="assets/news-1.jpg" alt="news" />
+          <div class="news__card__title">
+            <p>25th March 2022</p>
+            <p>By Emily</p>
+          </div>
+          <h4>Exploring Local Culinary Gems: A Foodie's Guide.</h4>
+          <p>
+            Join Emily as she takes you on a gastronomic adventure through the
+            neighborhood surrounding our hotel.
+          </p>
+        </div>
+        <div class="news__card">
+          <img src="assets/news-2.jpg" alt="news" />
+          <div class="news__card__title">
+            <p>15th June 2022</p>
+            <p>By David</p>
+          </div>
+          <h4>Balancing Mind, Body, and Soul at Our Hotel.</h4>
+          <p>
+            Discover holistic spa treatments, fitness facilities, and
+            mindfulness practices that will leave you feeling refreshed.
+          </p>
+        </div>
+        <div class="news__card">
+          <img src="assets/news-3.jpg" alt="news" />
+          <div class="news__card__title">
+            <p>08th August 2022</p>
+            <p>By Sarah</p>
+          </div>
+          <h4>Exploring Outdoor Activities Near Our Hotel.</h4>
+          <p>
+            From hiking and biking trails to water sports and wildlife
+            encounters, she highlights ways to experience nature's wonders.
+          </p>
+        </div>
+      </div>
+    </section>
+		{% endblock content %}
+
+   

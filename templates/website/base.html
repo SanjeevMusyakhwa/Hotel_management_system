@@ -1,355 +1,122 @@
 {% load static %}
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]>
-<!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-
-	<!-- Basic Page Needs
-	================================================== -->
-	<meta charset="utf-8">
-	<title>InnSync || {% block title %}
-    
-  {% endblock title %}</title>
-	<meta name="description"  content="Professional Creative Template" />
-	<meta name="author" content="IG Design">
-	<meta name="keywords"  content="ig design, website, design, html5, css3, jquery, creative, clean, animated, portfolio, blog, one-page, multi-page, corporate, business," />
-	<meta property="og:title" content="Professional Creative Template" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="" />
-	<meta property="og:image" content="" />
-	<meta property="og:image:width" content="470" />
-	<meta property="og:image:height" content="246" />
-	<meta property="og:site_name" content="" />
-	<meta property="og:description" content="Professional Creative Template" />
-	<meta name="twitter:card" content="" />
-	<meta name="twitter:site" content="https://twitter.com/IvanGrozdic" />
-	<meta name="twitter:domain" content="http://ivang-design.com/" />
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:description" content="Professional Creative Template" />
-	<meta name="twitter:image" content="http://ivang-design.com/" />
-
-	<!-- Mobile Specific Metas
-	================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="theme-color" content="#212121"/>
-    <meta name="msapplication-navbutton-color" content="#212121"/>
-    <meta name="apple-mobile-web-app-status-bar-style" content="#212121"/>
-
-	<!-- Web Fonts 
-	================================================== -->
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"/>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
-	
-	<!-- CSS
-	================================================== -->
-	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
-	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}"/>
-	<link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}"/>
-	<link rel="stylesheet" href="{% static 'css/datepicker.css' %}"/>
-	<link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css' %}"/>
-	<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}"/>
-	<link rel="stylesheet" href="{% static 'css/owl.transitions.css' %}"/>
-	<link rel="stylesheet" href="{% static 'css/style.css' %}"/>
-	<link rel="stylesheet" href="{% static 'css/colors/color.css' %}"/>
-			
-	<!-- Favicons
-	================================================== -->
-	<link rel="icon" type="image/png" href="favicon.png">
-	<link rel="apple-touch-icon" href="apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
-	
-	
-</head>
-<body>	
-
-	<!-- <div class="loader">
-		<div class="loader__figure"></div>
-	</div> -->
-
-	<svg class="hidden">
-		<svg id="icon-nav" viewBox="0 0 152 63">
-			<title>navarrow</title>
-			<path d="M115.737 29L92.77 6.283c-.932-.92-1.21-2.84-.617-4.281.594-1.443 1.837-1.862 2.765-.953l28.429 28.116c.574.57.925 1.557.925 2.619 0 1.06-.351 2.046-.925 2.616l-28.43 28.114c-.336.327-.707.486-1.074.486-.659 0-1.307-.509-1.69-1.437-.593-1.442-.315-3.362.617-4.284L115.299 35H3.442C2.032 35 .89 33.656.89 32c0-1.658 1.143-3 2.552-3H115.737z"/>
-		</svg>
-	</svg>
-
-	
-	<!-- Nav and Logo
-	================================================== -->
-
-	<nav id="menu-wrap" class="menu-back cbp-af-header">
-		<div class="menu-top background-black">
-			<div class="container">
-				<div class="row">
-					<div class="col-6 px-0 px-md-3 pl-1 py-3">
-						<span class="call-top">call us:</span> <a href="#" class="call-top">(381) 60 422 4256</a>
-					</div>
-					<div class="col-6 px-0 px-md-3 py-3 text-right">
-						<a href="#" class="social-top">fb</a>
-						<a href="#" class="social-top">tw</a>
-						<div class="lang-wrap">
-							eng
-							<ul>
-								<li><a href="#">ger</a></li>
-								<li><a href="#">rus</a></li>
-								<li><a href="#">ser</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>	
-			</div>		
-		</div>
-		<div class="menu">
-			<a href="index.html" >
-				<div class="logo">
-					<img src="img/logo.png" alt="">
-				</div>
-			</a>
-			<ul>
-				<li>
-					<a class="curent-page" href="#" >home</a>
-					<ul>
-						<li><a href="index.html">Flip Slider</a></li>
-						<li><a href="index-1.html">Video Background</a></li>
-						<li><a class="curent-page" href="index-2.html">Moving Image</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#" >rooms</a>
-					<ul>
-						<li><a href="rooms.html">Our Rooms</a></li>
-						<li><a href="rooms-gallery.html">Room Gallery</a></li>
-						<li><a href="rooms-video.html">Room Video</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#" >pages</a>
-					<ul>
-						<li><a href="explore.html">Explore</a></li>
-						<li><a href="search.html">Search</a></li>
-						<li><a href="tandc.html">Terms &amp; Conditions</a></li>
-						<li><a href="services.html">Services</a></li>
-						<li><a href="restaurant.html">Restaurant</a></li>
-						<li><a href="testimonials.html">Testimonials</a></li>
-						<li><a href="gallery.html">Gallery</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="about.html">about us</a>
-				</li>
-				<li>
-					<a href="blog.html">news</a>
-				</li>
-				<li>
-					<a href="">contact</a>
-				</li>
-				{% if request.user.is_authenticated %}				
-				<li>
-					<a href="{% url 'accounts:logout' %}">Logout</a>
-				</li>
-				{% else %}
-					<li>
-						<a href="{% url 'accounts:login' %}">Login</a>
-					</li>
-					<li>
-						<a href="{% url 'accounts:register' %}">Register</a>
-					</li>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <title>Web Design Mastery | Miranda</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__bar">
+        <div class="nav__header">
+          <div class="logo nav__logo">
+            <div>Inn</div>
+            <span>SYNC</span>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="{% url 'website:index' %}">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#room">Room</a></li>
+          <li><a href="#feature">Feature</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#news">News</a></li>
+					{% if request.user.is_authenticated %}
+						
+					<li><a href="#news">My Bookings</a></li>
+					<li><a href="{% url 'accounts:logout' %}">Logout</a></li>
+					{% else %}
+					<li><a href="{% url 'accounts:register' %}">Register</a></li>
+					<li><a href="{% url 'accounts:login' %}">Login</a></li>
 					{% endif %}
-					<li>
-					<a href="search.html"><span>book now</span></a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-	<div class="section hero-full-height over-hide">
-	
-		<div class="home-moving-image"></div>
-		<div class="dark-over-video"></div>
-	
-		<div class="hero-center-section ver-2">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-12 parallax-fade-top">
-						<div class="hero-text-ver-2">{% block header %}
-							A Joy to Happiness
-						{% endblock header %}</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-  {% block content %}
-    
-  {% endblock content %}
-  
-	
-	<div class="section">
-		<div id="owl-sep-2" class="owl-carousel owl-theme">								 
-			<div class="item">	
-				<a href="img/gallery/1.jpg" data-fancybox="gallery">							 
-					<div class="img-wrap gallery-small">
-						<img src="img/gallery/1-s.jpg" alt="">
-					</div>
-				</a>
-			</div>								 
-			<div class="item">	
-				<a href="img/gallery/2.jpg" data-fancybox="gallery">							 
-					<div class="img-wrap gallery-small">
-						<img src="img/gallery/2-s.jpg" alt="">
-					</div>
-				</a>
-			</div>								 
-			<div class="item">	
-				<a href="img/gallery/3.jpg" data-fancybox="gallery">							 
-					<div class="img-wrap gallery-small">
-						<img src="img/gallery/3-s.jpg" alt="">
-					</div>
-				</a>
-			</div>								 
-			<div class="item">	
-				<a href="img/gallery/4.jpg" data-fancybox="gallery">							 
-					<div class="img-wrap gallery-small">
-						<img src="img/gallery/4-s.jpg" alt="">
-					</div>
-				</a>
-			</div>								 
-			<div class="item">	
-				<a href="img/gallery/5.jpg" data-fancybox="gallery">							 
-					<div class="img-wrap gallery-small">
-						<img src="img/gallery/5-s.jpg" alt="">
-					</div>
-				</a>
-			</div>								 
-			<div class="item">	
-				<a href="img/gallery/6.jpg" data-fancybox="gallery">							 
-					<div class="img-wrap gallery-small">
-						<img src="img/gallery/6-s.jpg" alt="">
-					</div>
-				</a>
-			</div>								 
-			<div class="item">	
-				<a href="img/gallery/7.jpg" data-fancybox="gallery">							 
-					<div class="img-wrap gallery-small">
-						<img src="img/gallery/7-s.jpg" alt="">
-					</div>
-				</a>
-			</div>								 
-			<div class="item">	
-				<a href="img/gallery/8.jpg" data-fancybox="gallery">							 
-					<div class="img-wrap gallery-small">
-						<img src="img/gallery/8-s.jpg" alt="">
-					</div>
-				</a>
-			</div>								 
-			<div class="item">	
-				<a href="img/gallery/9.jpg" data-fancybox="gallery">							 
-					<div class="img-wrap gallery-small">
-						<img src="img/gallery/9-s.jpg" alt="">
-					</div>
-				</a>
-			</div>								 
-			<div class="item">	
-				<a href="img/gallery/10.jpg" data-fancybox="gallery">							 
-					<div class="img-wrap gallery-small">
-						<img src="img/gallery/10-s.jpg" alt="">
-					</div>
-				</a>
-			</div>							 
-			<div class="item">	
-				<a href="img/gallery/1.jpg" data-fancybox="gallery">							 
-					<div class="img-wrap gallery-small">
-						<img src="img/gallery/1-s.jpg" alt="">
-					</div>
-				</a>
-			</div>								 
-			<div class="item">	
-				<a href="img/gallery/2.jpg" data-fancybox="gallery">							 
-					<div class="img-wrap gallery-small">
-						<img src="img/gallery/2-s.jpg" alt="">
-					</div>
-				</a>
-			</div>								 
-			<div class="item">	
-				<a href="img/gallery/3.jpg" data-fancybox="gallery">							 
-					<div class="img-wrap gallery-small">
-						<img src="img/gallery/3-s.jpg" alt="">
-					</div>
-				</a>
-			</div>								 
-			<div class="item">	
-				<a href="img/gallery/4.jpg" data-fancybox="gallery">							 
-					<div class="img-wrap gallery-small">
-						<img src="img/gallery/4-s.jpg" alt="">
-					</div>
-				</a>
-			</div>								 
-			<div class="item">	
-				<a href="img/gallery/5.jpg" data-fancybox="gallery">							 
-					<div class="img-wrap gallery-small">
-						<img src="img/gallery/5-s.jpg" alt="">
-					</div>
-				</a>
-			</div>										 
-		</div>
-	</div>
-	
-	<div class="section padding-top-bottom-small background-black over-hide footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3 text-center text-md-left">
-					<img src="img/logo.png" alt="">
-					<p class="color-grey mt-4">Avenue Street 3284<br>Thessaloniki</p>
-				</div>
-				<div class="col-md-4 text-center text-md-left">
-					<h6 class="color-white mb-3">information</h6>
-					<a href="tandc.html">terms &amp; conditions</a>
-					<a href="services.html">services</a>
-					<a href="restaurant.html">restaurant</a>
-					<a href="testimonials.html">testimonials</a>
-					<a href="gallery.html">gallery &amp; images</a>
-				</div>
-				<div class="col-md-5 mt-4 mt-md-0 text-center text-md-left logos-footer">
-					<h6 class="color-white mb-3">about us</h6>
-					<p class="color-grey mb-4">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
-					<img src="img/logos/1.png" alt="">
-					<img src="img/logos/2.png" alt="">
-					<img src="img/logos/3.png" alt="">
-				</div>
-			</div>	
-		</div>	
-	</div>
-	
-	<div class="section py-4 background-dark over-hide footer-bottom">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 text-center text-md-left mb-2 mb-md-0">
-					<p>2019 © Thalia. All rights reserved.</p>
-				</div>
-				<div class="col-md-6 text-center text-md-right">
-					<a href="#" class="social-footer-bottom">facebook</a>
-					<a href="#" class="social-footer-bottom">twitter</a>
-					<a href="#" class="social-footer-bottom">instagram</a>
-				</div>
-			</div>	
-		</div>		
-	</div>
-	
-	
-	<div class="scroll-to-top"></div>
-	
-	
-	<!-- JAVASCRIPT
-    ================================================== -->
-	<script src="{% static 'js/jquery.min.js' %}"></script>
-	<script src="{% static 'js/popper.min.js' %}"></script> 
-	<script src="{% static 'js/bootstrap.min.js' %}"></script>
-	<script src="{% static 'js/plugins.js' %}"></script> 
-	<script src="{% static 'js/reveal-home.js' %}"></script>  
-	<script src="{% static 'js/custom.js' %}"></script> 
-	<script src="{% static 'js/move-img-effect.js' %}"></script> 
-<!-- End Document
-================================================== -->
-</body>
+        </ul>
+      </div>
+    </nav>
+
+		{% block content %}
+			
+		{% endblock content %}
+
+		<footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo footer__logo">
+            <div>H</div>
+            <span>HOTEL<br />MIRANDA</span>
+          </div>
+          <p class="section__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+            laudantium unde. Doloremque eaque debitis laborum labore voluptates
+            iste molestiae consectetur.
+          </p>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="ri-youtube-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-linkedin-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <div class="footer__links">
+            <li><a href="#">Online Booking</a></li>
+            <li><a href="#">Room Customization</a></li>
+            <li><a href="#">Virtual Tours</a></li>
+            <li><a href="#">Special Offers</a></li>
+            <li><a href="#">Concierge Services</a></li>
+            <li><a href="#">Customer Support</a></li>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <div class="footer__links">
+            <li>
+              <span><i class="ri-phone-fill"></i></span>
+              <div>
+                <h5>Phone Number</h5>
+                <p>+91 9876543210</p>
+              </div>
+            </li>
+            <li>
+              <span><i class="ri-record-mail-line"></i></span>
+              <div>
+                <h5>Email</h5>
+                <p>info@hotelmiranda.com</p>
+              </div>
+            </li>
+            <li>
+              <span><i class="ri-map-pin-2-fill"></i></span>
+              <div>
+                <h5>Location</h5>
+                <p>First St. NYC</p>
+              </div>
+            </li>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2023 Web Design Mastery. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
 </html>

@@ -43,7 +43,7 @@ def LoginView(request):
         if user is not None:
             login(request, user)  # Log in the user
             messages.success(request, "Logged in successfully.")
-            return redirect('dashboard:dashboard')  # Replace 'dashboard:dashboard' with your desired URL name
+            return redirect('website:index')  # Replace 'dashboard:dashboard' with your desired URL name
         else:
             messages.error(request, "Invalid phone number or password. Please try again.")
 
